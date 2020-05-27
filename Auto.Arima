@@ -1,0 +1,7 @@
+library(tseries)
+ts<-ts(B2$`Sales, in Thousands`)
+myts<-ts(ts, start=c(1962,1),end=c(1968,12),12)
+ts1<-ts(B11$`Sales, in Thousands of Bottles`[1:84])
+mod<- auto.arima(tw, test='adf', ic='aic',seasonal = FALSE)
+mod
+auto.arima()
